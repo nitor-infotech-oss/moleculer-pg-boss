@@ -1,5 +1,5 @@
 {
-  "name": "moleculer-pg-boss",
+  "name": "@nitor-infotech/moleculer-pg-boss",
   "version": "0.0.1",
   "description": "Mixin for pg-Boss",
   "main": "index.js",
@@ -57,5 +57,8 @@
   },
   "dependencies": {
     "pg-boss": "^3.1.6"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
