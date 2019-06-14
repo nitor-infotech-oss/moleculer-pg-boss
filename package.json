@@ -1,0 +1,61 @@
+{
+  "name": "moleculer-pg-boss",
+  "version": "0.0.1",
+  "description": "Mixin for pg-Boss",
+  "main": "index.js",
+  "author": "Sushant Kulkarni",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "microservice",
+    "moleculer",
+    "queue",
+    "pub-sub",
+    "pg-boss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitor-infotech-oss/moleculer-pg-boss.git"
+  },
+  "scripts": {
+    "dev": "nodemon examples/index.js",
+    "build": "babel src -d dist --minified",
+    "ci": "jest --watch",
+    "lint": "eslint --ext .js ./src/",
+    "deps": "npm-check -u",
+    "test": "jest --coverage",
+    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  },
+  "peerDependencies": {
+    "moleculer": "^0.11.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/services/"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "lint-staged": "^8.2.0",
+    "moleculer": "^0.13.9",
+    "moleculer-docgen": "^0.2.1",
+    "nodemon": "^1.19.1",
+    "npm-check": "^5.9.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "pg-boss": "^3.1.6"
+  }
+}
