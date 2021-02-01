@@ -56,7 +56,7 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "pg-boss": "^3.1.6"
+    "pg-boss": "^5.1.0"
   },
   "publishConfig": {
     "access": "public"
